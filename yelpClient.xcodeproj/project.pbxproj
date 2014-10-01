@@ -13,6 +13,7 @@
 		D0E02F5819DCA0E60026512D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E02F5719DCA0E60026512D /* Images.xcassets */; };
 		D0E02F5B19DCA0E60026512D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E02F5919DCA0E60026512D /* LaunchScreen.xib */; };
 		D0E02F6719DCA0E60026512D /* yelpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E02F6619DCA0E60026512D /* yelpClientTests.swift */; };
+		D0E02F7319DCA3330026512D /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E02F7219DCA3330026512D /* PlaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D0E02F6019DCA0E60026512D /* yelpClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yelpClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E02F6519DCA0E60026512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E02F6619DCA0E60026512D /* yelpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yelpClientTests.swift; sourceTree = "<group>"; };
+		D0E02F7219DCA3330026512D /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D0E02F5019DCA0E60026512D /* AppDelegate.swift */,
+				D0E02F7219DCA3330026512D /* PlaceCell.swift */,
 				D0E02F5219DCA0E60026512D /* ViewController.swift */,
 				D0E02F5419DCA0E60026512D /* Main.storyboard */,
 				D0E02F5719DCA0E60026512D /* Images.xcassets */,
@@ -214,6 +217,7 @@
 			files = (
 				D0E02F5319DCA0E60026512D /* ViewController.swift in Sources */,
 				D0E02F5119DCA0E60026512D /* AppDelegate.swift in Sources */,
+				D0E02F7319DCA3330026512D /* PlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				D0E02F6C19DCA0E60026512D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0E02F6D19DCA0E60026512D /* Build configuration list for PBXNativeTarget "yelpClientTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				D0E02F6F19DCA0E60026512D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
