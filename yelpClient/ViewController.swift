@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         client.searchWithTerm("Thai", success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
             //println(response)
             println(response.count)
-            self.places = response["businesses"] as [NSDictionary]
+            self.places = response["businesses"] as! [NSDictionary]
             //println(self.places)
             }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
                 println(error)
@@ -57,22 +57,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("PlaceCell") as PlaceCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("PlaceCell")as! PlaceCell
         
         self.client.searchWithTerm("Thai", success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
             //println(response)
             println(response.count)
-            self.places = response["businesses"] as [NSDictionary]
+            self.places = response["businesses"] as! [NSDictionary]
             println(self.places)
             
             //name, address, ratings (count),
             var place = self.places[indexPath.row]
             println("am I even getting here?")
             
-            var location = place["location"] as NSDictionary
+            var location = place["location"] as! NSDictionary
             cell.address.text = location["display_address"] as? String
             cell.nameLabel.text = place["name"] as? String
-            var reviewCount = place["review_count"] as Int
+            var reviewCount = place["review_count"] as! Int
             cell.reviews.text = "\(reviewCount)"
             
             tableView.reloadData()
